@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sklearn.cluster import KMeans
 import requests
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 CORS(app)
 app.config['TIMEOUT'] = 1800 + 600  # Increase timeout by 10 minutes
 
